@@ -51,4 +51,21 @@ public:
 
         preorder(root->right);
     }
+};
+
+int main()
+{
+    Solution mytree;
+    Node* root = NULL;
+    int t;
+    int data;
+    cin>>t;
+
+    while(t-- > 0)
+    {
+        cin>>data;
+        root = mytree.insert(root,data);
+    }
+    mytree.preorder(root);
+    return 0;
 }
